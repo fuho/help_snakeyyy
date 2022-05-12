@@ -1,9 +1,5 @@
 import logging
 import sys
-from pprint import pprint
-
-import dynoscale.config
-from dynoscale.hooks.gunicorn import pre_request as dynoscale_hook
 
 log_handler = logging.StreamHandler(stream=sys.stdout)
 log_handler.setFormatter(
