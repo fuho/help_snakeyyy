@@ -1,1 +1,1 @@
-web: gunicorn --config ./upsell_platform/gunicorn.conf.py
+ web: gunicorn upsell_platform.wsgi:ds_application

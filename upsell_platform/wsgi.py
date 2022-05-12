@@ -1,5 +1,3 @@
-import logging
-
 from dynoscale.wsgi import DynoscaleWsgiApp
 from flask import Flask
 
