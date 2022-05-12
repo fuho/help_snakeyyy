@@ -21,4 +21,5 @@ def pre_request(worker, req):
     # https://dynoscale.net/documentation/getting-started-python
     dynoscale_hook(worker, req)
     print(f"Config: {dynoscale.config.Config()}")
+    print(f"Config.is_valid: {dynoscale.config.Config().is_valid}")
     pprint(req.headers)
