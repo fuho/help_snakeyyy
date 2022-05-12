@@ -2,6 +2,7 @@ import logging
 import sys
 from pprint import pprint
 
+import dynoscale.config
 from dynoscale.hooks.gunicorn import pre_request as dynoscale_hook
 
 log_handler = logging.StreamHandler(stream=sys.stdout)
@@ -19,4 +20,5 @@ logging.getLogger("dynoscale").setLevel(logging.DEBUG)
 def pre_request(worker, req):
     # https://dynoscale.net/documentation/getting-started-python
     dynoscale_hook(worker, req)
+    print(f"Config: {dynoscale.config.Config()}")
     pprint(req.headers)
