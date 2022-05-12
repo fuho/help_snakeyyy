@@ -16,7 +16,6 @@ logging.getLogger("").handlers = [handler]
 logging.getLogger("dynoscale").setLevel(logging.DEBUG)
 
 application = Flask(__name__)
-ds_application = DynoscaleWsgiApp(application)
 
 
 @application.route("/")

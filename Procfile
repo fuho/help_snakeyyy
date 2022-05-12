@@ -1,1 +1,1 @@
- web: gunicorn upsell_platform.wsgi:ds_application
+web: gunicorn upsell_platform.wsgi:application
