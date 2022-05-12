@@ -7,7 +7,7 @@ from flask import Flask
 handler = logging.StreamHandler(stream=sys.stdout)
 handler.setFormatter(
     logging.Formatter(
-        fmt="%(asctime)s.%(msecs)03d %(levelname)-8 %(processName)s %(threadName)10s"
+        fmt="%(asctime)s.%(msecs)03d %(levelname)-8s %(processName)s %(threadName)10s"
             " %(name)s: %(message)s",
         datefmt="%H:%M:%S",
     )
